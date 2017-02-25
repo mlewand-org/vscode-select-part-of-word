@@ -332,6 +332,7 @@
                     'you could also mix it with12345^wordsToSee how it behaves with numbers',
                 expected = 'thisIsACamelCaseWord itsSuperFun   to	writeIn-CamelCase\n' +
                     'you could also mix it with^12345wordsToSee how it behaves with numbers';
+                    // force CI tests.
 
             return vscodeTestContent.setWithSelection( input )
                 .then( textEditor => {
